@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.welcome-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Gradient background colors */
+}
+
+.content {
+    z-index: 1;
+    text-align: center;
+    color: #fff; /* Text color */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4caf50; /* Play button background color */
+    color: #fff; /* Play button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Hover state color */
+}
+
+.floating-animation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.2); /* Floating animation color */
+    border-radius: 50%;
+    animation: floatAnimation 3s infinite alternate; /* Floating animation */
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
